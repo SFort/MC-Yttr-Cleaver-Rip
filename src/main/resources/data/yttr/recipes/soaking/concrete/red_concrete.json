@@ -1,7 +1,0 @@
-{
-	"type": "lib39:soaking",
-	"ingredients": [ { "item": "minecraft:red_concrete_powder" } ],
-	"catalyst": { "fluid": "minecraft:water" },
-	"result": { "item": "minecraft:red_concrete" },
-	"time": 5
-}

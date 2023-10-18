@@ -1,8 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "quartz_block" },
-	"result": {
-		"item": "quartz",
-		"count": 4
-	}
-}

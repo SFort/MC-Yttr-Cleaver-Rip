@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:stonecutting",
-	"ingredient": {
-		"item": "minecraft:obsidian"
-	},
-	"result": "yttr:polished_obsidian_capstone",
-	"count": 1
-}

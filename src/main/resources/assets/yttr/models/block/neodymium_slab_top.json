@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/slab_top",
-	"textures": {
-		"bottom": "yttr:block/neodymium_pole",
-		"side": "yttr:block/neodymium_side",
-		"top": "yttr:block/neodymium_pole"
-	}
-}

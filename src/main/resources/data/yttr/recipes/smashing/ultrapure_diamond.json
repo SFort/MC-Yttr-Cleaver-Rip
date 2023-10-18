@@ -1,6 +1,0 @@
-{
-	"type": "lib39:piston_smashing",
-	"input": { "block": "yttr:compressed_ultrapure_carbon_block" },
-	"catalysts": { "block": "minecraft:diamond_block" },
-	"output": { "item": "yttr:ultrapure_diamond" }
-}

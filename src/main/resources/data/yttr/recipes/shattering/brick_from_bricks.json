@@ -1,8 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "bricks" },
-	"result": {
-		"item": "brick",
-		"count": 4
-	}
-}

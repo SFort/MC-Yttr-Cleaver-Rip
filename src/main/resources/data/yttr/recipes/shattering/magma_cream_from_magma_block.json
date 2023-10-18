@@ -1,7 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "magma_block" },
-	"result": {
-		"item": "magma_cream"
-	}
-}

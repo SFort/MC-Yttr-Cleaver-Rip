@@ -1,6 +1,0 @@
-{
-	"parent": "yttr:item/ruined_pipe",
-	"textures": {
-		"0": "yttr:block/ruined_frame"
-	}
-}

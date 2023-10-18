@@ -1,7 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "cobblestone" },
-	"result": {
-		"item": "gravel"
-	}
-}

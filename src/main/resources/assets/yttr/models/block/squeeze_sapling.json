@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "yttr:block/squeeze_sapling"
-  }
-}

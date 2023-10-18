@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/lever_on",
-	"textures": {
-		"particle": "yttr:block/ruined_cobblestone",
-		"base": "yttr:block/ruined_cobblestone",
-		"lever": "yttr:block/ruined_lever"
-	}
-}

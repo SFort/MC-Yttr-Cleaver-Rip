@@ -1,8 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "purpur_block" },
-	"result": {
-		"item": "popped_chorus_fruit",
-		"count": 1
-	}
-}

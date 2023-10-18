@@ -1,6 +1,0 @@
-{
-	"type": "yttr:void_filtering",
-	"output": { "item": "yttr:music_disc_void" },
-	"chance": 0.001,
-	"hidden": true
-}

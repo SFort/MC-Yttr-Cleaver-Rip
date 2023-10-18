@@ -5,20 +5,10 @@ buildscript {
 	}
 	dependencies {
 		classpath 'com.google.code.gson:gson:2.8.7'
-		classpath 'com.modrinth.minotaur:Minotaur:2.4.3'
-		classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.4.0'
 	}
 }
 plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT'
-	id 'io.github.juuxel.loom-vineflower' version '1.11.0'
-}
-
-if (System.getenv("MODRINTH_TOKEN")) {
-	apply plugin: "com.modrinth.minotaur"
-}
-if (System.getenv("CURSE_TOKEN")) {
-	apply plugin: "com.matthewprenger.cursegradle"
 }
 
 sourceCompatibility = JavaVersion.toVersion(17)
@@ -111,9 +101,7 @@ dependencies {
 	modImplementation "dev.emi:trinkets:3.7.1"
 	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.2.1"
 	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.2.1"
-	
-	include "me.luligabi:NoIndium:1.1.0+1.20"
-	
+
 	[
 		'aqi', 'core', 'lockpick', 'tunnel', 'phantom', 'waypoint', 'weld',
 		'sandman', 'crowbar', 'keygen', 'dessicant', 'deferral', 'machination', 'util', 'ripple',
@@ -184,79 +172,3 @@ task amendJar {
 
 tasks.remapJar.finalizedBy amendJar
 
-if (System.getenv("MODRINTH_TOKEN")) {
-	modrinth {
-		token = System.getenv("MODRINTH_TOKEN")
-		projectId = 'yttr'
-		versionNumber = project.version
-		versionName = 'v'+project.version
-		versionType = 'release'
-		uploadFile = remapJar
-		gameVersions = ['1.20', '1.20.1']
-		loaders = ['fabric', 'quilt']
-		detectLoaders = false
-		changelog = file('CHANGELOG.md').text
-		dependencies {
-			required.project 'fabric-api'
-			required.project 'qsl'
-			optional.project 'emi'
-			optional.project 'trinkets'
-			embedded.project 'no-indium'
-			embedded.project 'lib39'
-			embedded.project 'lucium'
-		}
-	}
-}
-
-if (System.getenv("CURSE_TOKEN")) {
-	curseforge {
-		apiKey = System.getenv("CURSE_TOKEN")
-		project {
-			id = '467267'
-			releaseType = 'release'
-			changelogType = 'markdown'
-			changelog = file('CHANGELOG.md')
-
-			addGameVersion '1.20'
-			addGameVersion '1.20.1'
-			addGameVersion 'Fabric'
-			addGameVersion 'Quilt'
-
-			mainArtifact(remapJar) {
-				displayName = 'Yttr v'+project.version
-			}
-			relations {
-				// The Curse launcher fails to notice FAPI is Fabric-only and QSL is Quilt-only, so
-				// it will attempt to install both. Sigh.
-				//requiredDependency 'fabric-api'
-				//requiredDependency 'qsl'
-				optionalDependency 'emi'
-				optionalDependency 'trinkets'
-				embeddedLibrary 'no-indium'
-				embeddedLibrary 'lib39'
-				embeddedLibrary 'lucium'
-			}
-		}
-		options {
-			javaIntegration = false
-			forgeGradleIntegration = false
-			javaVersionAutoDetect = false
-		}
-	}
-}
-
-if (System.getenv("MCMODCN_COOKIE")) {
-	task mcmodcn(type: Exec) {
-		dependsOn remapJar
-
-		commandLine './mcmodcn-upload.sh', '3949', '1.20', '2,11', '', remapJar.archivePath.getPath()
-	}
-}
-
-if (System.getenv("GITEA_KEY")) {
-	task gitea(type: Exec) {
-		dependsOn remapJar
-
-		commandLine './gitea-upload.sh', '1.20.1', project.version, remapJar.archivePath.getPath()
-	}
-}

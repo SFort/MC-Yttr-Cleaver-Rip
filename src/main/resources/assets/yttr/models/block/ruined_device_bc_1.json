@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "yttr:block/ruined_device_bc_1_top",
-    "front": "yttr:block/ruined_device_bc_1_front",
-    "side": "yttr:block/ruined_device_bc_side"
-  }
-}

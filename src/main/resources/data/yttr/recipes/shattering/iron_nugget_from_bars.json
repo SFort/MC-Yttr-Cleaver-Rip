@@ -1,8 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "iron_bars" },
-	"result": {
-		"item": "iron_nugget",
-		"count": 5
-	}
-}

@@ -1,5 +1,0 @@
-{
-	"type": "yttr:void_filtering",
-	"output": { "item": "yttr:ultrapure_gold" },
-	"chance": 0.175
-}

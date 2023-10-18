@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:stonecutting",
-	"ingredient": {
-		"item": "yttr:neodymium_slab"
-	},
-	"result": "yttr:neodymium_disc",
-	"count": 9
-}

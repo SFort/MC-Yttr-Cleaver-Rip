@@ -1,8 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "tag": "wool" },
-	"result": {
-		"item": "string",
-		"count": 3
-	}
-}

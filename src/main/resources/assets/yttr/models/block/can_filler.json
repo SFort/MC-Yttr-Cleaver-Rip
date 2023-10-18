@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "yttr:block/yttrium_plating",
-    "front": "yttr:block/can_filler_front",
-    "side": "yttr:block/can_filler_side"
-  }
-}

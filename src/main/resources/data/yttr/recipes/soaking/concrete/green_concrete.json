@@ -1,7 +1,0 @@
-{
-	"type": "lib39:soaking",
-	"ingredients": [ { "item": "minecraft:green_concrete_powder" } ],
-	"catalyst": { "fluid": "minecraft:water" },
-	"result": { "item": "minecraft:green_concrete" },
-	"time": 5
-}

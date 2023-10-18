@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/cube_bottom_top",
-	"textures": {
-		"top": "yttr:block/centrifuge_top",
-		"side": "yttr:block/centrifuge_side_on",
-		"bottom": "yttr:block/yttrium_plating"
-	}
-}

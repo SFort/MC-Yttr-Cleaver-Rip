@@ -1,7 +1,0 @@
-{
-	"type": "yttr:shattering",
-	"ingredient": { "item": "smooth_red_sandstone" },
-	"result": {
-		"item": "red_sandstone"
-	}
-}
