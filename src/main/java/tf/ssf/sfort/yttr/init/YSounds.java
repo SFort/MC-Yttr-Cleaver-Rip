@@ -1,6 +1,5 @@
 package tf.ssf.sfort.yttr.init;
 
-import com.unascribed.lib39.core.api.util.LatchHolder;
 import tf.ssf.sfort.yttr.Yttr;
 
 import net.minecraft.registry.Registries;

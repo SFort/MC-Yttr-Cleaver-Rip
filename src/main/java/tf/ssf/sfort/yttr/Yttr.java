@@ -1,10 +1,10 @@
 package tf.ssf.sfort.yttr;
 
-import com.unascribed.lib39.core.api.AutoRegistry;
-import com.unascribed.lib39.dessicant.api.DessicantControl;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import tf.ssf.sfort.yttr.init.YBlockEntities;
 import tf.ssf.sfort.yttr.init.YBlocks;
@@ -12,6 +12,8 @@ import tf.ssf.sfort.yttr.init.YCriteria;
 import tf.ssf.sfort.yttr.init.YItems;
 import tf.ssf.sfort.yttr.init.YSounds;
 import tf.ssf.sfort.yttr.init.YTags;
+import tf.ssf.sfort.yttr.mixinsupport.DirectClickItem;
+import tf.ssf.sfort.yttr.util.AutoRegistry;
 
 public class Yttr implements ModInitializer {
 	
@@ -28,10 +30,29 @@ public class Yttr implements ModInitializer {
 		YTags.init();
 
 		YCriteria.init();
+		ServerPlayNetworking.registerGlobalReceiver(new Identifier("lib39-recoil", "direct_attack"), (server, player, handler, buf, sender) -> {
+			server.execute(() -> {
+				if (player.getMainHandStack().getItem() instanceof DirectClickItem dci) {
+					if (!player.getItemCooldownManager().isCoolingDown(player.getMainHandStack().getItem())) {
+						if (dci.onDirectAttack(player, Hand.MAIN_HAND).shouldSwingHand()) {
+							player.swingHand(Hand.MAIN_HAND, true);
+						}
+					}
+				}
+			});
+		});
 
-
-		DessicantControl.optIn("yttr");
-
+		ServerPlayNetworking.registerGlobalReceiver(new Identifier("lib39-recoil", "direct_use"), (server, player, handler, buf, sender) -> {
+			server.execute(() -> {
+				if (player.getMainHandStack().getItem() instanceof DirectClickItem dci) {
+					if (!player.getItemCooldownManager().isCoolingDown(player.getMainHandStack().getItem())) {
+						if (dci.onDirectUse(player, Hand.MAIN_HAND).shouldSwingHand()) {
+							player.swingHand(Hand.MAIN_HAND, true);
+						}
+					}
+				}
+			});
+		});
 	}
 	
 	public static Identifier id(String path) {

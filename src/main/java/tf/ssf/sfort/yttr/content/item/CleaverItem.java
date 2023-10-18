@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.unascribed.lib39.recoil.api.DirectClickItem;
-import com.unascribed.lib39.util.api.NBTUtils;
 import tf.ssf.sfort.yttr.content.block.decor.CleavedBlock;
 import tf.ssf.sfort.yttr.content.block.decor.CleavedBlockEntity;
 import tf.ssf.sfort.yttr.init.YBlocks;
@@ -13,7 +11,9 @@ import tf.ssf.sfort.yttr.init.YCriteria;
 import tf.ssf.sfort.yttr.init.YSounds;
 import tf.ssf.sfort.yttr.init.YTags;
 import tf.ssf.sfort.yttr.mixin.accessor.AccessorBlockSoundGroup;
+import tf.ssf.sfort.yttr.mixinsupport.DirectClickItem;
 import tf.ssf.sfort.yttr.util.ControlHintable;
+import tf.ssf.sfort.yttr.util.NBTUtils;
 import tf.ssf.sfort.yttr.util.math.partitioner.DEdge;
 import tf.ssf.sfort.yttr.util.math.partitioner.Plane;
 import tf.ssf.sfort.yttr.util.math.partitioner.Polygon;

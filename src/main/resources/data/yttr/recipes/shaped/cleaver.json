@@ -1,0 +1,19 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern":[
+    "L  ",
+    "I  ",
+    "   "
+  ],
+  "key":{
+    "L":{
+      "item":"minecraft:diamond"
+    },
+    "I": {
+      "item":"minecraft:stick"
+    }
+  },
+  "result":{
+    "item":"yttr:cleaver"
+  }
+}

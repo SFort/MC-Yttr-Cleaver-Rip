@@ -5,18 +5,14 @@ import com.google.common.collect.Maps;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.blaze3d.vertex.VertexFormats;
-import com.unascribed.lib39.core.api.util.LatchReference;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
-import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
@@ -39,7 +35,6 @@ import tf.ssf.sfort.yttr.client.cache.CleavedBlockMeshes;
 import tf.ssf.sfort.yttr.client.render.CleaverUI;
 import tf.ssf.sfort.yttr.client.util.TextureColorThief;
 import tf.ssf.sfort.yttr.init.YBlockEntities;
-import tf.ssf.sfort.yttr.init.YBlocks;
 import tf.ssf.sfort.yttr.init.YItems;
 
 import java.lang.annotation.Annotation;
@@ -108,11 +103,6 @@ public class YttrClient extends IHasAClient implements ClientModInitializer {
 		renderLayers.put("tripwire", RenderLayer.getTripwire());
 
 		Yttr.autoreg.eachRegisterableField(YItems.class, Item.class, null, this::handleItemAutoreg);
-		Yttr.autoreg.eachRegisterableField(YItems.class, LatchReference.class, null, (f, l, s) -> {
-			if (l.isPresent() && l.get() instanceof Item i) {
-				handleItemAutoreg(f, i, s);
-			}
-		});
 		Yttr.autoreg.eachRegisterableField(YBlockEntities.class, BlockEntityType.class, YBlockEntities.Renderer.class, (f, type, ann) -> {
 			if (ann != null) {
 				try {
