@@ -116,7 +116,7 @@ dependencies {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/yttr.accesswidener")
+	accessWidenerPath = file("src/main/resources/yttr_blocks_rip.accesswidener")
 }
 
 processResources {

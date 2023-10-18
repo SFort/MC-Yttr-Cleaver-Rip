@@ -32,7 +32,7 @@ return {
 				} catch (e) {}
 			}
 		}
-		def refmap = fs.getPath("yttr-refmap.json")
+		def refmap = fs.getPath("blockrip-refmap.json")
 		def gson = new GsonBuilder().setPrettyPrinting().create()
 		def obj = gson.fromJson(new String(Files.readAllBytes(refmap), StandardCharsets.UTF_8), JsonObject.class)
 		def sorter

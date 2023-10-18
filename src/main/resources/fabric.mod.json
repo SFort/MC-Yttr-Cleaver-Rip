@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "yttr-blocks-rip",
+	"id": "yttr_blocks_rip",
 	"version": "${version}",
 	"name": "Yttr block rip",
 	"description": "A single ripped yttr feature",
@@ -20,8 +20,10 @@
           "tf.ssf.sfort.yttr.client.YttrClient"
         ]
 	},
-	"mixins": [ "yttr.mixins.json" ],
-	"accessWidener": "yttr.accesswidener",
+	"mixins": [
+		"yttr_blocks_rip.mixins.json"
+	],
+	"accessWidener": "yttr_blocks_rip.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.7.4",
 		"fabric": "*",
