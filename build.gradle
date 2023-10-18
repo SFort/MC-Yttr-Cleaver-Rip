@@ -1,0 +1,262 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		gradlePluginPortal()
+	}
+	dependencies {
+		classpath 'com.google.code.gson:gson:2.8.7'
+		classpath 'com.modrinth.minotaur:Minotaur:2.4.3'
+		classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.4.0'
+	}
+}
+plugins {
+	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'io.github.juuxel.loom-vineflower' version '1.11.0'
+}
+
+if (System.getenv("MODRINTH_TOKEN")) {
+	apply plugin: "com.modrinth.minotaur"
+}
+if (System.getenv("CURSE_TOKEN")) {
+	apply plugin: "com.matthewprenger.cursegradle"
+}
+
+sourceCompatibility = JavaVersion.toVersion(17)
+targetCompatibility = JavaVersion.toVersion(17)
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+if (version.contains("{COMMIT}")) {
+	version = version.replace("{COMMIT}", 'git rev-parse --short HEAD'.execute().getText().trim())
+}
+if (version.contains("{DIRTY}")) {
+	def dirty = !'git diff-index HEAD'.execute().in.text.trim().isEmpty()
+	version = version.replace("{DIRTY}", dirty ? '-dirty' : '')
+}
+if (version.contains("{COMMITNUM}")) {
+	def num = null
+	if (System.getenv("CI")) {
+		num = './ci-commitnum.sh'.execute().getText().trim()
+	} else {
+		num = 'git rev-list --count HEAD'.execute().getText().trim()
+	}
+	version = version.replace("{COMMITNUM}", num)
+}
+group = project.maven_group
+
+repositories {
+	maven {
+		url 'https://repo.unascribed.com'
+		content {
+			includeGroup 'com.unascribed'
+		}
+	}
+	maven {
+		url "https://maven.shedaniel.me/"
+		content {
+			includeGroup 'me.shedaniel'
+			includeGroup 'me.shedaniel.cloth'
+			includeGroup 'me.shedaniel.cloth.api'
+			includeGroup 'dev.architectury'
+		}
+	}
+	maven {
+		url 'https://maven.terraformersmc.com/releases/'
+		content {
+			includeGroup 'dev.emi'
+			includeGroup 'com.terraformersmc'
+		}
+	}
+	maven {
+		url 'https://maven.ladysnake.org/releases'
+		content {
+			includeGroup 'dev.onyxstudios.cardinal-components-api'
+		}
+	}
+	maven {
+		url 'https://maven.cafeteria.dev/releases/'
+		content {
+			includeGroup 'me.luligabi'
+		}
+	}
+	maven {
+		url 'https://maven.quiltmc.org/repository/release'
+		content {
+			includeGroup 'org.quiltmc'
+			includeGroup 'org.quiltmc.unpick'
+		}
+	}
+	mavenLocal()
+}
+
+configurations.all {
+	resolutionStrategy.dependencySubstitution {
+		substitute(module("org.quiltmc.unpick:unpick-cli:2.2.0"))
+			.using(module("net.fabricmc.unpick:unpick-cli:2.3.0"))
+			.because("It's gone")
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${minecraft_version}"
+	mappings "org.quiltmc:quilt-mappings:${minecraft_version}+build.${mappings_version}:intermediary-v2"
+	modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+	modImplementation "com.unascribed:ears-api:1.4.5"
+	modImplementation "dev.emi:emi-fabric:1.0.15+1.20.1"
+	
+	modImplementation "dev.emi:trinkets:3.7.1"
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.2.1"
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.2.1"
+	
+	include "me.luligabi:NoIndium:1.1.0+1.20"
+	
+	[
+		'aqi', 'core', 'lockpick', 'tunnel', 'phantom', 'waypoint', 'weld',
+		'sandman', 'crowbar', 'keygen', 'dessicant', 'deferral', 'machination', 'util', 'ripple',
+		'recoil', 'mesh'
+	].each { module ->
+		modApi include("com.unascribed:lib39-${module}:1.5.0-experimental6.1+1.20.1")
+	}
+	
+	modImplementation("com.terraformersmc:modmenu:7.2.1") {
+		transitive = false
+	}
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/yttr.accesswidener")
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	// ensure that the encoding is set to UTF-8, no matter what the system default is
+	// this fixes some edge cases with special characters not displaying correctly
+	// see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
+	// If Javadoc is generated, this must be specified in that task too.
+	it.options.encoding = "UTF-8"
+}
+
+tasks.withType(AbstractArchiveTask) {
+	preserveFileTimestamps = false
+	reproducibleFileOrder = true
+}
+
+jar {
+	doFirst {
+		File dir = file('build/classes/java/main');
+		def classes = []
+		dir.eachFileRecurse(groovy.io.FileType.FILES, {
+			if (it.name.endsWith(".class")) {
+				classes.add(it.getAbsolutePath().substring(dir.getAbsolutePath().length()+1))
+			}
+		})
+		classes.sort()
+		StringBuilder bldr = new StringBuilder();
+		classes.each {
+			bldr.append(it).append("\n")
+		}
+		file('build/tmp/yttr-classes.txt').text = bldr.toString();
+	}
+	from("LICENSE") {
+		rename { "${it}_${project.archivesBaseName}"}
+	}
+	from "build/tmp/yttr-classes.txt"
+}
+
+task amendJar {
+	def amender = evaluate(file("JarAmender.groovy"))
+	dependsOn remapJar
+	doFirst {
+		amender(remapJar.archivePath)
+	}
+}
+
+tasks.remapJar.finalizedBy amendJar
+
+if (System.getenv("MODRINTH_TOKEN")) {
+	modrinth {
+		token = System.getenv("MODRINTH_TOKEN")
+		projectId = 'yttr'
+		versionNumber = project.version
+		versionName = 'v'+project.version
+		versionType = 'release'
+		uploadFile = remapJar
+		gameVersions = ['1.20', '1.20.1']
+		loaders = ['fabric', 'quilt']
+		detectLoaders = false
+		changelog = file('CHANGELOG.md').text
+		dependencies {
+			required.project 'fabric-api'
+			required.project 'qsl'
+			optional.project 'emi'
+			optional.project 'trinkets'
+			embedded.project 'no-indium'
+			embedded.project 'lib39'
+			embedded.project 'lucium'
+		}
+	}
+}
+
+if (System.getenv("CURSE_TOKEN")) {
+	curseforge {
+		apiKey = System.getenv("CURSE_TOKEN")
+		project {
+			id = '467267'
+			releaseType = 'release'
+			changelogType = 'markdown'
+			changelog = file('CHANGELOG.md')
+
+			addGameVersion '1.20'
+			addGameVersion '1.20.1'
+			addGameVersion 'Fabric'
+			addGameVersion 'Quilt'
+
+			mainArtifact(remapJar) {
+				displayName = 'Yttr v'+project.version
+			}
+			relations {
+				// The Curse launcher fails to notice FAPI is Fabric-only and QSL is Quilt-only, so
+				// it will attempt to install both. Sigh.
+				//requiredDependency 'fabric-api'
+				//requiredDependency 'qsl'
+				optionalDependency 'emi'
+				optionalDependency 'trinkets'
+				embeddedLibrary 'no-indium'
+				embeddedLibrary 'lib39'
+				embeddedLibrary 'lucium'
+			}
+		}
+		options {
+			javaIntegration = false
+			forgeGradleIntegration = false
+			javaVersionAutoDetect = false
+		}
+	}
+}
+
+if (System.getenv("MCMODCN_COOKIE")) {
+	task mcmodcn(type: Exec) {
+		dependsOn remapJar
+
+		commandLine './mcmodcn-upload.sh', '3949', '1.20', '2,11', '', remapJar.archivePath.getPath()
+	}
+}
+
+if (System.getenv("GITEA_KEY")) {
+	task gitea(type: Exec) {
+		dependsOn remapJar
+
+		commandLine './gitea-upload.sh', '1.20.1', project.version, remapJar.archivePath.getPath()
+	}
+}

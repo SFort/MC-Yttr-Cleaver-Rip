@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:neodymium_disc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "yttr:neodymium_disc"
+    }
+  },
+  "result": {
+    "item": "yttr:neodymium_slab"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:smelting",
+	"lib39:discovered_via": "yttr:iron_dust",
+	"ingredient": {
+		"item": "yttr:iron_dust"
+	},
+	"result": "minecraft:iron_ingot",
+	"experience": 0,
+	"cookingtime": 200
+}

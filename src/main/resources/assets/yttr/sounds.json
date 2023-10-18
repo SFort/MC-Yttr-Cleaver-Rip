@@ -1,0 +1,730 @@
+{
+	"rifle_charge": {
+		"sounds": ["yttr:rifle_charge"],
+		"subtitle": "subtitles.yttr.rifle_charge"
+	},
+	"rifle_charge_fast": {
+		"sounds": ["yttr:rifle_charge_fast"],
+		"subtitle": "subtitles.yttr.rifle_charge"
+	},
+	"rifle_charge_continue": {
+		"sounds": ["yttr:silence"],
+		"subtitle": "subtitles.yttr.rifle_charge"
+	},
+	"rifle_charge_rattle": {
+		"sounds": ["yttr:silence"],
+		"subtitle": "subtitles.yttr.rifle_charge_rattle"
+	},
+	"rifle_charge_cancel": {
+		"sounds": ["yttr:silence"]
+	},
+	"rifle_fire_dud": {
+		"sounds": ["yttr:rifle_fire_dud"],
+		"subtitle": "subtitles.yttr.rifle_fire_dud"
+	},
+	"rifle_fire": {
+		"sounds": ["yttr:rifle_fire"],
+		"subtitle": "subtitles.yttr.rifle_fire"
+	},
+	"rifle_overcharge": {
+		"sounds": ["yttr:rifle_overcharge"],
+		"subtitle": "subtitles.yttr.rifle_overcharge"
+	},
+	"rifle_vent": {
+		"sounds": ["minecraft:random/fizz"],
+		"subtitle": "subtitles.yttr.rifle_vent"
+	},
+	"rifle_load": {
+		"sounds": ["minecraft:dig/sand2"],
+		"subtitle": "subtitles.yttr.rifle_load"
+	},
+	"rifle_waste": {
+		"sounds": ["minecraft:dig/sand4"],
+		"subtitle": "subtitles.yttr.rifle_waste"
+	},
+	"void": {
+		"sounds": ["yttr:void"],
+		"subtitle": "subtitles.yttr.void"
+	},
+	"dissolve": {
+		"sounds": ["yttr:dissolve"],
+		"subtitle": "subtitles.yttr.dissolve"
+	},
+	"craft_aware_hopper": {
+		"sounds": ["yttr:craft_aware_hopper"],
+		"subtitle": "subtitles.yttr.horrible_crafting"
+	},
+	"craft_screeper_nest": {
+		"sounds": ["yttr:craft_screeper_nest"],
+		"subtitle": "subtitles.yttr.horrible_crafting"
+	},
+	"aware_hopper_ambient": {
+		"sounds": [
+			"yttr:aware_hopper_say1",
+			"yttr:aware_hopper_say2",
+			"yttr:aware_hopper_say3"
+		],
+		"subtitle": "subtitles.yttr.aware_hopper"
+	},
+	"aware_hopper_break": {
+		"sounds": ["yttr:aware_hopper_break"]
+	},
+	"aware_hopper_scream": {
+		"sounds": ["yttr:aware_hopper_scream"]
+	},
+	"swallow": {
+		"sounds": ["minecraft:item/bottle/drink_honey1"],
+		"subtitle": "subtitles.yttr.swallow"
+	},
+	"cleaver": {
+		"sounds": ["minecraft:ui/stonecutter/cut1"],
+		"subtitle": "subtitles.yttr.cleaver"
+	},
+	"snare_plop": {
+		"sounds": ["minecraft:random/pop"]
+	},
+	"snare_grab": {
+		"sounds": ["minecraft:mob/zombie/woodbreak"],
+		"subtitle": "subtitles.yttr.snare_grab"
+	},
+	"snare_release": {
+		"sounds": ["minecraft:mob/zombie/woodbreak"],
+		"subtitle": "subtitles.yttr.snare_release"
+	},
+	"snare_break": {
+		"sounds": ["minecraft:mob/zombie/woodbreak"],
+		"subtitle": "subtitles.yttr.snare_break"
+	},
+	"snap": {
+		"sounds": ["minecraft:mob/zombie/woodbreak"]
+	},
+	"clang": {
+		"sounds": [
+			"minecraft:mob/zombie/metal1",
+			"minecraft:mob/zombie/metal2",
+			"minecraft:mob/zombie/metal3"
+		]
+	},
+	"chute_plated": {
+		"sounds": ["minecraft:block/smithing_table/smithing_table2"],
+		"subtitle": "subtitles.yttr.chute_plated"
+	},
+	"void_hole": {
+		"sounds": ["minecraft:mob/wither/spawn"],
+		"subtitle": "subtitles.yttr.void_hole"
+	},
+	"effector_open": {
+		"sounds": ["yttr:effector_open"],
+		"subtitle": "subtitles.yttr.effector_open"
+	},
+	"effector_close": {
+		"sounds": ["yttr:effector_close"],
+		"subtitle": "subtitles.yttr.effector_close"
+	},
+	"centrifuge": {
+		"sounds": ["yttr:centrifuge1", "yttr:centrifuge2"],
+		"subtitle": "subtitles.yttr.centrifuge"
+	},
+	"centrifuge_crackle": {
+		"sounds": [
+			"minecraft:block/furnace/fire_crackle1",
+			"minecraft:block/furnace/fire_crackle2",
+			"minecraft:block/furnace/fire_crackle3",
+			"minecraft:block/furnace/fire_crackle4",
+			"minecraft:block/furnace/fire_crackle5"
+		],
+		"subtitle": "subtitles.yttr.centrifuge_crackle"
+	},
+	"honk": {
+		"sounds": [ "yttr:honk" ],
+		"subtitle": "subtitles.yttr.honk"
+	},
+	"dive": {
+		"sounds": [ "yttr:dive" ]
+	},
+	"danger": {
+		"sounds": [ "yttr:danger" ]
+	},
+	"equip_suit": {
+		"sounds": [
+			{
+				"name": "minecraft:item/armor/equip_netherite1",
+				"volume": 0.8,
+				"pitch": 0.7
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite2",
+				"volume": 0.8,
+				"pitch": 0.7
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite3",
+				"volume": 0.8,
+				"pitch": 0.7
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite4",
+				"volume": 0.8,
+				"pitch": 0.7
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite1",
+				"volume": 0.8,
+				"pitch": 0.6
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite2",
+				"volume": 0.8,
+				"pitch": 0.6
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite3",
+				"volume": 0.8,
+				"pitch": 0.6
+			},
+			{
+				"name": "minecraft:item/armor/equip_netherite4",
+				"volume": 0.8,
+				"pitch": 0.6
+			}
+		],
+		"subtitle": "subtitles.yttr.equip_suit"
+	},
+	"dive_mono": {
+		"sounds": [ "yttr:dive_mono" ]
+	},
+	"dive_thrust": {
+		"sounds": [ "yttr:dive_thrust" ]
+	},
+	"dive_end": {
+		"sounds": [ "yttr:dive_end" ]
+	},
+	"suit_station_crackle": {
+		"sounds": [
+			"minecraft:block/furnace/fire_crackle1",
+			"minecraft:block/furnace/fire_crackle2",
+			"minecraft:block/furnace/fire_crackle3",
+			"minecraft:block/furnace/fire_crackle4",
+			"minecraft:block/furnace/fire_crackle5"
+		],
+		"subtitle": "subtitles.yttr.suit_station_crackle"
+	},
+	"suit_station_weld": {
+		"sounds": [ "yttr:weld1", "yttr:weld2" ],
+		"subtitle": "subtitles.yttr.suit_station_weld"
+	},
+	"suit_station_melt": {
+		"sounds": [ "yttr:melt_glowstone" ],
+		"subtitle": "subtitles.yttr.suit_station_melt"
+	},
+	"suit_station_use_plate": {
+		"sounds": [ "yttr:use_plate" ],
+		"subtitle": "subtitles.yttr.suit_station_use_plate"
+	},
+	"skeletal_sorter_ambient": {
+		"sounds": [
+			"minecraft:mob/skeleton/say1",
+			"minecraft:mob/skeleton/say2",
+			"minecraft:mob/skeleton/say3"
+		],
+		"subtitle": "subtitles.yttr.skeletal_sorter_ambient"
+	},
+	"skeletal_sorter_hurt": {
+		"sounds": [
+			"minecraft:mob/skeleton/hurt1",
+			"minecraft:mob/skeleton/hurt2",
+			"minecraft:mob/skeleton/hurt3",
+			"minecraft:mob/skeleton/hurt4"
+		],
+		"subtitle": "subtitles.yttr.skeletal_sorter_hurt"
+	},
+	"replicator_appear": {
+		"sounds": [ "yttr:replicator_appear" ],
+		"subtitle": "subtitles.yttr.replicator_appear"
+	},
+	"replicator_disappear": {
+		"sounds": [ "yttr:replicator_disappear" ],
+		"subtitle": "subtitles.yttr.replicator_disappear"
+	},
+	"replicator_update": {
+		"sounds": [ "yttr:replicator_update" ],
+		"subtitle": "subtitles.yttr.replicator_update"
+	},
+	"replicator_refuse": {
+		"sounds": [ "yttr:replicator_update" ],
+		"subtitle": "subtitles.yttr.replicator_refuse"
+	},
+	"replicator_vend": {
+		"sounds": [ "yttr:replicator_vend" ],
+		"subtitle": "subtitles.yttr.replicator_vend"
+	},
+	"silence": {
+		"sounds": ["yttr:silence"]
+	},
+	"spectral_axe_disappear": {
+		"sounds": ["yttr:spectral_axe_disappear"],
+		"subtitle": "subtitles.yttr.spectral_axe_disappear"
+	},
+	"dsu_open": {
+		"sounds": ["yttr:dsu_open"],
+		"subtitle": "subtitles.yttr.dsu_open"
+	},
+	"dsu_close": {
+		"sounds": ["yttr:dsu_close"],
+		"subtitle": "subtitles.yttr.dsu_close"
+	},
+	"drop_cast": {
+		"sounds": ["yttr:drop_cast"],
+		"subtitle": "subtitles.yttr.drop_cast"
+	},
+	"drop_cast_cancel": {
+		"sounds": ["yttr:silence"]
+	},
+	"drop_cast_cancel_audible": {
+		"sounds": ["yttr:drop_cast_cancel"],
+		"subtitle": "subtitles.yttr.drop_cast_cancel"
+	},
+	"rootbreak": {
+		"sounds": [
+			{"name": "yttr:rootbreak", "pitch": 1}
+		],
+		"subtitle": "subtitles.block.generic.break"
+	},
+	"rootstep": {
+		"sounds": [
+			{"name": "yttr:rootstep", "pitch": 1.2},
+			{"name": "yttr:rootstep", "pitch": 1.1},
+			{"name": "yttr:rootstep", "pitch": 1},
+			{"name": "yttr:rootstep", "pitch": 0.9},
+			{"name": "yttr:rootstep", "pitch": 0.8},
+			{"name": "yttr:rootstep", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.footsteps"
+	},
+	"roothitweak": {
+		"sounds": [
+			{"name": "yttr:rootstep", "pitch": 1.2},
+			{"name": "yttr:rootstep", "pitch": 1.1},
+			{"name": "yttr:rootstep", "pitch": 1},
+			{"name": "yttr:rootstep", "pitch": 0.9},
+			{"name": "yttr:rootstep", "pitch": 0.8},
+			{"name": "yttr:rootstep", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.hit"
+	},
+	"rootplace": {
+		"sounds": [
+			{"name": "yttr:rootstep", "pitch": 1.2},
+			{"name": "yttr:rootstep", "pitch": 1.1},
+			{"name": "yttr:rootstep", "pitch": 1},
+			{"name": "yttr:rootstep", "pitch": 0.9},
+			{"name": "yttr:rootstep", "pitch": 0.8},
+			{"name": "yttr:rootstep", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.place"
+	},
+	"roothit": {
+		"sounds": [
+			{"name": "yttr:roothit1", "pitch": 1.2},
+			{"name": "yttr:roothit1", "pitch": 1.1},
+			{"name": "yttr:roothit1", "pitch": 1},
+			{"name": "yttr:roothit1", "pitch": 0.9},
+			{"name": "yttr:roothit1", "pitch": 0.8},
+			{"name": "yttr:roothit1", "pitch": 0.7},
+			{"name": "yttr:roothit2", "pitch": 1.2},
+			{"name": "yttr:roothit2", "pitch": 1.1},
+			{"name": "yttr:roothit2", "pitch": 1},
+			{"name": "yttr:roothit2", "pitch": 0.9},
+			{"name": "yttr:roothit2", "pitch": 0.8},
+			{"name": "yttr:roothit2", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.hit"
+	},
+	"hollowbreakhuge": {
+		"sounds": [
+			{"name": "yttr:hollowbreak", "pitch": 1.2},
+			{"name": "yttr:hollowbreak", "pitch": 1.1},
+			{"name": "yttr:hollowbreak", "pitch": 1},
+			{"name": "yttr:hollowbreak", "pitch": 0.9},
+			{"name": "yttr:hollowbreak", "pitch": 0.8},
+			{"name": "yttr:hollowbreak", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.break"
+	},
+	"hollowplacehuge": {
+		"sounds": [
+			{"name": "yttr:hollowplace", "pitch": 1.2},
+			{"name": "yttr:hollowplace", "pitch": 1.1},
+			{"name": "yttr:hollowplace", "pitch": 1},
+			{"name": "yttr:hollowplace", "pitch": 0.9},
+			{"name": "yttr:hollowplace", "pitch": 0.8},
+			{"name": "yttr:hollowplace", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.place"
+	},
+	"hollowplace": {
+		"sounds": [
+			{"name": "yttr:hollowstep1", "pitch": 1.2},
+			{"name": "yttr:hollowstep1", "pitch": 1.1},
+			{"name": "yttr:hollowstep1", "pitch": 1},
+			{"name": "yttr:hollowstep1", "pitch": 0.9},
+			{"name": "yttr:hollowstep1", "pitch": 0.8},
+			{"name": "yttr:hollowstep1", "pitch": 0.7},
+			{"name": "yttr:hollowstep2", "pitch": 1.2},
+			{"name": "yttr:hollowstep2", "pitch": 1.1},
+			{"name": "yttr:hollowstep2", "pitch": 1},
+			{"name": "yttr:hollowstep2", "pitch": 0.9},
+			{"name": "yttr:hollowstep2", "pitch": 0.8},
+			{"name": "yttr:hollowstep2", "pitch": 0.7},
+			{"name": "yttr:hollowstep3", "pitch": 1.2},
+			{"name": "yttr:hollowstep3", "pitch": 1.1},
+			{"name": "yttr:hollowstep3", "pitch": 1},
+			{"name": "yttr:hollowstep3", "pitch": 0.9},
+			{"name": "yttr:hollowstep3", "pitch": 0.8},
+			{"name": "yttr:hollowstep3", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.place"
+	},
+	"hollowbreak": {
+		"sounds": [
+			{"name": "yttr:hollowhit2", "pitch": 1.2},
+			{"name": "yttr:hollowhit2", "pitch": 1.1},
+			{"name": "yttr:hollowhit2", "pitch": 1},
+			{"name": "yttr:hollowhit2", "pitch": 0.9},
+			{"name": "yttr:hollowhit2", "pitch": 0.8},
+			{"name": "yttr:hollowhit2", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.break"
+	},
+	"hollowhit": {
+		"sounds": [
+			{"name": "yttr:hollowhit1", "pitch": 1, "volume": 0.8},
+			{"name": "yttr:hollowhit1", "pitch": 0.9, "volume": 0.8},
+			{"name": "yttr:hollowhit1", "pitch": 0.8, "volume": 0.8},
+			{"name": "yttr:hollowhit1", "pitch": 0.7, "volume": 0.8},
+			{"name": "yttr:hollowhit2", "pitch": 1.2},
+			{"name": "yttr:hollowhit2", "pitch": 1.1},
+			{"name": "yttr:hollowhit2", "pitch": 1},
+			{"name": "yttr:hollowhit2", "pitch": 0.9},
+			{"name": "yttr:hollowhit2", "pitch": 0.8},
+			{"name": "yttr:hollowhit2", "pitch": 0.7},
+			{"name": "yttr:hollowstep1", "pitch": 1.2},
+			{"name": "yttr:hollowstep1", "pitch": 1.1},
+			{"name": "yttr:hollowstep1", "pitch": 1},
+			{"name": "yttr:hollowstep1", "pitch": 0.9},
+			{"name": "yttr:hollowstep1", "pitch": 0.8},
+			{"name": "yttr:hollowstep1", "pitch": 0.7},
+			{"name": "yttr:hollowstep2", "pitch": 1.2},
+			{"name": "yttr:hollowstep2", "pitch": 1.1},
+			{"name": "yttr:hollowstep2", "pitch": 1},
+			{"name": "yttr:hollowstep2", "pitch": 0.9},
+			{"name": "yttr:hollowstep2", "pitch": 0.8},
+			{"name": "yttr:hollowstep2", "pitch": 0.7},
+			{"name": "yttr:hollowstep3", "pitch": 1.2},
+			{"name": "yttr:hollowstep3", "pitch": 1.1},
+			{"name": "yttr:hollowstep3", "pitch": 1},
+			{"name": "yttr:hollowstep3", "pitch": 0.9},
+			{"name": "yttr:hollowstep3", "pitch": 0.8},
+			{"name": "yttr:hollowstep3", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.hit"
+	},
+	"hollowstep": {
+		"sounds": [
+			{"name": "yttr:hollowstep1", "pitch": 1},
+			{"name": "yttr:hollowstep1", "pitch": 0.9},
+			{"name": "yttr:hollowstep1", "pitch": 0.8},
+			{"name": "yttr:hollowstep1", "pitch": 0.7},
+			{"name": "yttr:hollowstep2", "pitch": 1.2},
+			{"name": "yttr:hollowstep2", "pitch": 1.1},
+			{"name": "yttr:hollowstep2", "pitch": 1},
+			{"name": "yttr:hollowstep2", "pitch": 0.9},
+			{"name": "yttr:hollowstep2", "pitch": 0.8},
+			{"name": "yttr:hollowstep2", "pitch": 0.7},
+			{"name": "yttr:hollowstep3", "pitch": 1.2},
+			{"name": "yttr:hollowstep3", "pitch": 1.1},
+			{"name": "yttr:hollowstep3", "pitch": 1},
+			{"name": "yttr:hollowstep3", "pitch": 0.9},
+			{"name": "yttr:hollowstep3", "pitch": 0.8},
+			{"name": "yttr:hollowstep3", "pitch": 0.7}
+		],
+		"subtitle": "subtitles.block.generic.footsteps"
+	},
+	"metal_button": {
+		"sounds": [ "yttr:metal_button" ],
+		"subtitle": "subtitles.block.button.click"
+	},
+	"rifle_scope": {
+		"sounds": [ "yttr:rifle_scope" ]
+	},
+	"papillons": {
+		"sounds": [ { "name": "yttr:papillons.xm.bz2", "stream": true } ]
+	},
+	"void_music": {
+		"sounds": [ { "name": "yttr:void.xm.bz2", "stream": true } ]
+	},
+	"desert_heat": {
+		"sounds": [ { "name": "yttr:desert_heat.xm.bz2", "stream": true } ]
+	},
+	"memorandum": {
+		"sounds": [ { "name": "yttr:memorandum", "stream": true } ]
+	},
+	"torus": {
+		"sounds": [ { "name": "yttr:torus.xm.bz2", "stream": true } ]
+	},
+	"desert_heat_mono": {
+		"sounds": [ { "name": "yttr:desert_heat.xm.bz2--mono-", "stream": true } ]
+	},
+	"memorandum_mono": {
+		"sounds": [ { "name": "yttr:--mono-memorandum", "stream": true } ]
+	},
+	"torus_mono": {
+		"sounds": [ { "name": "yttr:torus.xm.bz2--mono-", "stream": true } ]
+	},
+	"vorpalhit1": {
+		"sounds": [
+			"minecraft:entity/player/attack/knockback1",
+			"minecraft:entity/player/attack/knockback2",
+			"minecraft:entity/player/attack/knockback3",
+			"minecraft:entity/player/attack/knockback4"
+		]
+	},
+	"vorpalhit2": {
+		"sounds": [
+			"minecraft:entity/player/attack/crit1",
+			"minecraft:entity/player/attack/crit2",
+			"minecraft:entity/player/attack/crit3"
+		],
+		"subtitle": "subtitles.yttr.vorpalhit"
+	},
+	"buzz": {
+		"sounds": [ { "name": "yttr:buzz" } ]
+	},
+	"metal_plate_on": {
+		"sounds": [ "yttr:metal_button" ],
+		"subtitle": "subtitles.block.pressure_plate.click"
+	},
+	"metal_plate_off": {
+		"sounds": [ "yttr:metal_button" ],
+		"subtitle": "subtitles.block.pressure_plate.click"
+	},
+	"small_zap": {
+		"sounds": [ "yttr:small_zap" ],
+		"subtitle": "subtitles.yttr.small_zap"
+	},
+	"project": {
+		"sounds": [ "yttr:ring" ],
+		"subtitle": "subtitles.yttr.project"
+	},
+	"shift": {
+		"sounds": [ "yttr:ring" ],
+		"subtitle": "subtitles.yttr.shift"
+	},
+	"magnet_step": {
+		"sounds": [ "yttr:magnet_step1", "yttr:magnet_step2", "yttr:magnet_step3", "yttr:magnet_step4" ],
+		"subtitle": "subtitles.yttr.magnet_step"
+	},
+	"small_explode": {
+		"sounds": [ "yttr:small_explode" ],
+		"subtitle": "subtitles.yttr.small_explode"
+	},
+	
+	"low_note.basedrum": {
+		"sounds": [
+			"yttr:note/low/bd"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.bass": {
+		"sounds": [
+			"yttr:note/low/bassattack"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.bell": {
+		"sounds": [
+			"yttr:note/low/bell"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.chime": {
+		"sounds": [
+			"yttr:note/low/icechime"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.flute": {
+		"sounds": [
+			"yttr:note/low/flute"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.guitar": {
+		"sounds": [
+			"yttr:note/low/guitar"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.harp": {
+		"sounds": [
+			"yttr:note/low/harp2"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.hat": {
+		"sounds": [
+			"yttr:note/low/hat"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.snare": {
+		"sounds": [
+			"yttr:note/low/snare"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.xylophone": {
+		"sounds": [
+			"yttr:note/low/xylobone"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.cow_bell": {
+		"sounds": [
+			"yttr:note/low/cow_bell"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.iron_xylophone": {
+		"sounds": [
+			{
+				"name": "yttr:note/low/iron_xylophone",
+				"volume": 1
+			}
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.didgeridoo": {
+		"sounds": [
+			"yttr:note/low/didgeridoo"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.bit": {
+		"sounds": [
+			"yttr:note/low/bit"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.banjo": {
+		"sounds": [
+			"yttr:note/low/banjo"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"low_note.pling": {
+		"sounds": [
+			"yttr:note/low/pling"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.basedrum": {
+		"sounds": [
+			"yttr:note/high/bd"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.bass": {
+		"sounds": [
+			"yttr:note/high/bassattack"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.bell": {
+		"sounds": [
+			"yttr:note/high/bell"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.chime": {
+		"sounds": [
+			"yttr:note/high/icechime"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.flute": {
+		"sounds": [
+			"yttr:note/high/flute"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.guitar": {
+		"sounds": [
+			"yttr:note/high/guitar"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.harp": {
+		"sounds": [
+			"yttr:note/high/harp2"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.hat": {
+		"sounds": [
+			"yttr:note/high/hat"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.snare": {
+		"sounds": [
+			"yttr:note/high/snare"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.xylophone": {
+		"sounds": [
+			"yttr:note/high/xylobone"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.cow_bell": {
+		"sounds": [
+			"yttr:note/high/cow_bell"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.iron_xylophone": {
+		"sounds": [
+			{
+				"name": "yttr:note/high/iron_xylophone",
+				"volume": 1
+			}
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.didgeridoo": {
+		"sounds": [
+			"yttr:note/high/didgeridoo"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.bit": {
+		"sounds": [
+			"yttr:note/high/bit"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.banjo": {
+		"sounds": [
+			"yttr:note/high/banjo"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	},
+	"high_note.pling": {
+		"sounds": [
+			"yttr:note/high/pling"
+		],
+		"subtitle": "subtitles.block.note_block.note"
+	}
+}

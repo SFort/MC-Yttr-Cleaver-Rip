@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:rafter",
+  "pattern": [
+    "CCCCCC",
+    "CCCCCC",
+    "CCCCCC",
+    "CCCCCC",
+    "CCCCCC",
+    "CCCCCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "yttr:giant_cobblestone"
+  }
+}

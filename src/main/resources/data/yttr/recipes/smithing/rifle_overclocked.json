@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "lib39:discovered_via": "yttr:glassy_void",
+  "base": {
+    "item": "yttr:rifle"
+  },
+  "addition": {
+    "item": "yttr:glassy_void"
+  },
+  "result": {
+    "item": "yttr:rifle_overclocked"
+  },
+  "template": []
+}

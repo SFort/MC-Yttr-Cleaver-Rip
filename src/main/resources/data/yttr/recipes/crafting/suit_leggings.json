@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"lib39:discovered_via": "yttr:armor_plating",
+	"pattern": [
+		"PPP",
+		"P P",
+		"P P"
+	],
+	"key": {
+		"P": { "item": "yttr:armor_plating" }
+	},
+	"result": {
+		"item": "yttr:suit_leggings"
+	}
+}

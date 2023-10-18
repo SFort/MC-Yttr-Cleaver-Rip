@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "minecraft:hopper",
+	"pattern": [
+		"H",
+		"c"
+	],
+	"key": {
+		"H": {
+			"item": "minecraft:hopper"
+		},
+		"c": {
+			"item": "yttr:chute"
+		}
+	},
+  "result": {
+    "item": "yttr:flopper"
+  }
+}

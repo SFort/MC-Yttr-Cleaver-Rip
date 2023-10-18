@@ -1,0 +1,22 @@
+{
+	"type": "yttr:centrifuging",
+	"lib39:discovered_via": "yttr:gadolinite",
+	"ingredient": { "tag": "yttr:gadolinite_ores" },
+	"results": [
+		{
+			"item": "yttr:iron_dust",
+			"count": 2
+		},
+		{
+			"item": "yttr:neodymium_dust",
+			"count": 1
+		},
+		{
+			"item": "yttr:yttrium_dust",
+			"count": 1
+		},
+		{
+			"item": "minecraft:cobblestone"
+		}
+	]
+}

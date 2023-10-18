@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "yttr:block/inred_cable",
+		"cable": "yttr:block/inred_cable"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 0],
+			"to": [9, 1, 7],
+			"faces": {
+				"north": {"uv": [12, 0, 14, 1], "texture": "#cable"},
+				"east": {"uv": [6, 13, 13, 14], "texture": "#cable"},
+				"south": {"uv": [12, 0, 14, 1], "texture": "#cable"},
+				"west": {"uv": [0, 13, 7, 14], "texture": "#cable"},
+				"up": {"uv": [12, 8, 14, 15], "texture": "#cable"},
+				"down": {"uv": [12, 10, 14, 17], "texture": "#cable"}
+			}
+		},
+		{
+			"from": [7, 14, 0],
+			"to": [9, 17, 1],
+			"faces": {
+				"north": {"uv": [12, 0, 14, 3], "texture": "#cable"},
+				"east": {"uv": [6, 10, 7, 13], "texture": "#cable"},
+				"south": {"uv": [12, 13, 14, 16], "texture": "#cable"},
+				"west": {"uv": [3, 10, 4, 13], "texture": "#cable"},
+				"up": {"uv": [12, 7, 14, 8], "texture": "#cable"}
+			}
+		},
+		{
+			"from": [7, 1, 0],
+			"to": [9, 14, 1],
+			"faces": {
+				"north": {"uv": [12, 3, 14, 16], "texture": "#cable"},
+				"east": {"uv": [0, 0, 1, 13], "texture": "#cable"},
+				"south": {"uv": [12, 3, 14, 16], "texture": "#cable"},
+				"west": {"uv": [0, 0, 1, 13], "texture": "#cable"}
+			}
+		}
+	]
+}

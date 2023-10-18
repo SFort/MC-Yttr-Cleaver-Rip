@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:rafter",
+  "pattern": [
+    "###",
+    "###",
+    "###",
+    "###",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "#": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "yttr:spatula"
+  }
+}

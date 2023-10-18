@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "minecraft:hopper",
+  "pattern": [
+    "I I",
+    "IyI",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "y": {
+      "item": "yttr:yttrium_nugget"
+    }
+  },
+  "result": {
+    "item": "yttr:chute",
+    "count": 8
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"lib39:discovered_via": "yttr:rifle",
+	"pattern": [
+		"YYY",
+		"CcC",
+		"YYY"
+	],
+	"key": {
+		"Y": { "item": "yttr:yttrium_ingot" },
+		"C": { "item": "minecraft:copper_ingot" },
+		"c": { "item": "yttr:empty_ammo_can" }
+	},
+	"result": {
+		"item": "yttr:can_filler"
+	}
+}

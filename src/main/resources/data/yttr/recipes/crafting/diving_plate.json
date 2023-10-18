@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:armor_plating",
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": { "item": "yttr:armor_plating" }
+  },
+  "result": {
+    "item": "yttr:diving_plate"
+  }
+}

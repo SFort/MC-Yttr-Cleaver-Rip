@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:inred_cable",
+  "pattern": [
+    "W W",
+    "GPG",
+    " G "
+  ],
+  "key": {
+    "W": { "item": "yttr:inred_cable" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "P": { "item": "yttr:power_meter" }
+  },
+  "result": {
+    "item": "yttr:inred_multimeter"
+  }
+}

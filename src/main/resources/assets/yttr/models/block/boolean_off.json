@@ -1,0 +1,16 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "yttr:block/inred_mode_bitwise",
+		"particle": "yttr:block/inred_mode_bitwise"
+	},
+	"elements": [
+		{
+			"from": [4, -0.01, 2],
+			"to": [12, 1.99, 14],
+			"faces": {
+				"up": {"uv": [0, 0, 9, 12], "texture": "#0"}
+			}
+		}
+	]
+}

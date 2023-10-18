@@ -1,0 +1,6 @@
+{
+	"sources": [
+		{"type": "single", "resource": "minecraft:entity/skeleton/skeleton"},
+		{"type": "single", "resource": "yttr:icon-16"}
+	]
+}

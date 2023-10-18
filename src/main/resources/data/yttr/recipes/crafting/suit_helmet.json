@@ -1,0 +1,18 @@
+{
+	"type": "yttr:lamp_crafting",
+	"lib39:discovered_via": "yttr:armor_plating",
+	"pattern": [
+		"PPP",
+		"PGP",
+		" F "
+	],
+	"key": {
+		"F": { "item": "yttr:fixture" },
+		"P": { "item": "yttr:armor_plating" },
+		"G": { "item": "yttr:glassy_void" }
+	},
+	"result": {
+		"item": "yttr:suit_helmet"
+	},
+	"yttr:strip_tags": ["Inverted"]
+}

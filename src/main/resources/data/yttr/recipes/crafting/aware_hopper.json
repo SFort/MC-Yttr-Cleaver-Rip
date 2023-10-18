@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"lib39:discovered_via": "yttr:snare",
+	"pattern": [
+		"ZSE",
+		"LCL",
+		" H "
+	],
+	"key": {
+		"Z": {
+			"yttr:entity": "minecraft:zombie"
+		},
+		"E": {
+			"yttr:entity": "minecraft:enderman"
+		},
+		"S": {
+			"item": "yttr:shears"
+		},
+		"C": {
+			"item": "minecraft:crafting_table"
+		},
+		"H": {
+			"item": "minecraft:hopper"
+		},
+		"L": {
+			"item": "minecraft:lapis_lazuli"
+		}
+	},
+	"lib39:sound": "yttr:craft_aware_hopper",
+	"result": {
+		"item": "yttr:aware_hopper"
+	}
+}

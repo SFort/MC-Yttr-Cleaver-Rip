@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"lib39:discovered_via": "yttr:bedrock_shard",
+	"pattern": [
+		"YYY",
+		"YBY",
+		"YYY"
+	],
+	"key": {
+		"Y": { "item": "yttr:yttrium_ingot" },
+		"B": { "item": "yttr:bedrock_shard" }
+	},
+	"result": {
+		"item": "yttr:armor_plating",
+		"count": 4
+	}
+}

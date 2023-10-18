@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:cuprosteel_ingot",
+  "group": "cuprosteel_ingot",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": { "item": "yttr:cuprosteel_ingot" }
+  },
+  "result": {
+    "item": "yttr:cuprosteel_block"
+  }
+}

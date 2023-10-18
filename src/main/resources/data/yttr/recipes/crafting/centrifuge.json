@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"lib39:discovered_via": "yttr:yttrium_ingot",
+	"pattern": [
+		"YYY",
+		"Y Y",
+		"YFY"
+	],
+	"key": {
+		"Y": { "item": "yttr:yttrium_ingot" },
+		"F": { "item": "minecraft:furnace" }
+	},
+	"result": {
+		"item": "yttr:centrifuge"
+	}
+}

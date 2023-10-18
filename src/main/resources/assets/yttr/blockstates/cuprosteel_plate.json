@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "yttr:block/cuprosteel_plate"
+    },
+    "axis=x": {
+      "model": "yttr:block/cuprosteel_plate",
+      "y": 90
+    }
+  }
+}

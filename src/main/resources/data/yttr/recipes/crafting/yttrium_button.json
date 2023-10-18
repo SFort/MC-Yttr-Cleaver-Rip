@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "lib39:discovered_via": "yttr:yttrium_ingot",
+  "pattern": [
+    "YY",
+    "YY"
+  ],
+  "key": {
+    "Y": {
+      "item": "yttr:yttrium_nugget"
+    }
+  },
+  "result": {
+    "item": "yttr:yttrium_button"
+  }
+}

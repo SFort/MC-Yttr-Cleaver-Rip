@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.unascribed.yttr.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "yttr-refmap.json",
+  "plugin": "com.unascribed.yttr.YttrMixin",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

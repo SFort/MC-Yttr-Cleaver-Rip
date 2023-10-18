@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "lib39:discovered_via": "yttr:neodymium_disc",
+  "ingredients": [
+    {
+      "item": "yttr:neodymium_slab"
+    },
+    {
+      "item": "yttr:neodymium_slab"
+    }
+  ],
+  "result": {
+    "item": "yttr:neodymium_block",
+    "count": 1
+  }
+}

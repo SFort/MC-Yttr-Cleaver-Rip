@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "yttr:block/inred_cable",
+		"cable": "yttr:block/inred_cable"
+	},
+	"elements": [
+		{
+			"name": "CONNECTED",
+			"from": [7, 0, 0],
+			"to": [9, 1, 7],
+			"faces": {
+				"north": {"uv": [12, 0, 16, 1], "texture": "#cable"},
+				"east": {"uv": [3, 13, 9, 14], "texture": "#cable"},
+				"south": {"uv": [12, 0, 16, 1], "texture": "#cable"},
+				"west": {"uv": [3, 13, 9, 14], "texture": "#cable"},
+				"up": {"uv": [13, 8, 15, 15], "texture": "#cable"},
+				"down": {"uv": [13, 9, 15, 16], "texture": "#cable"}
+			}
+		}
+	]
+}
