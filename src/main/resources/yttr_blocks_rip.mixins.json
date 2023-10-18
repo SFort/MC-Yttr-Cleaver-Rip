@@ -4,16 +4,15 @@
   "package": "tf.ssf.sfort.yttr.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "yttr_blocks_rip-refmap.json",
-  "plugin": "tf.ssf.sfort.yttr.YttrMixin",
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "accessor.AccessorBlockSoundGroup",
-    "cleaver.MixinEntity"
+    "accessor.AccessorBlockSoundGroup"
   ],
   "client": [
     "MixinClientWorld",
+    "cleaver.MixinEntity",
     "cleaver.client.MixinBlockDustParticle",
     "cleaver.client.MixinCamera",
     "cleaver.client.MixinEntityRenderDispatcher",
