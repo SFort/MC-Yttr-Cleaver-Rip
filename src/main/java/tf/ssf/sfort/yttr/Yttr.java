@@ -30,7 +30,7 @@ public class Yttr implements ModInitializer {
 		YTags.init();
 
 		YCriteria.init();
-		ServerPlayNetworking.registerGlobalReceiver(new Identifier("lib39-recoil", "direct_attack"), (server, player, handler, buf, sender) -> {
+		ServerPlayNetworking.registerGlobalReceiver(new Identifier("yttr", "direct_attack"), (server, player, handler, buf, sender) -> {
 			server.execute(() -> {
 				if (player.getMainHandStack().getItem() instanceof DirectClickItem dci) {
 					if (!player.getItemCooldownManager().isCoolingDown(player.getMainHandStack().getItem())) {
@@ -42,7 +42,7 @@ public class Yttr implements ModInitializer {
 			});
 		});
 
-		ServerPlayNetworking.registerGlobalReceiver(new Identifier("lib39-recoil", "direct_use"), (server, player, handler, buf, sender) -> {
+		ServerPlayNetworking.registerGlobalReceiver(new Identifier("yttr", "direct_use"), (server, player, handler, buf, sender) -> {
 			server.execute(() -> {
 				if (player.getMainHandStack().getItem() instanceof DirectClickItem dci) {
 					if (!player.getItemCooldownManager().isCoolingDown(player.getMainHandStack().getItem())) {
